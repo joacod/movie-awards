@@ -1,38 +1,37 @@
-# create-svelte
+# Movie Awards
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+## 👋 Introduction
 
-## Creating a project
+Project created using [pnpm](https://pnpm.io/) and [SvelteKit](https://kit.svelte.dev/)
 
-If you're seeing this, you've probably already done this step. Congrats!
+## 💻 Development
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+**Install dependencies:**
 
 ```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
+pnpm install
 ```
 
-## Building
-
-To create a production version of your app:
+**Run the development server:**
 
 ```bash
-npm run build
+pnpm run dev
 ```
 
-You can preview the production build with `npm run preview`.
+Open [http://localhost:5173](http://localhost:5173) with your browser to see the web.
 
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+## 📄 License
+
+Copyright 2023 [Joaquin Diaz](https://github.com/joacod)
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## ☕️ Did you like the project?
+
+You can colaborate with me giving a star ⭐️ to the project or
+
+[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/yellow_img.png)](https://www.buymeacoffee.com/joacod)
+
+Thanks! 😃
+
+[![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/diazjoaquin/)
