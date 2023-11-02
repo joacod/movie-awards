@@ -1,8 +1,19 @@
+<div align="center">
+
 # Movie Awards
+
+<!-- [![Vercel](https://vercelbadge.vercel.app/api/joacod/movie-awards)](https://.vercel.app/) -->
+[![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/joacod/movie-awards/blob/main/LICENSE)
+
+[![PNPM](https://img.shields.io/badge/pnpm-%234a4a4a.svg?style=for-the-badge&logo=pnpm&logoColor=f69220)](https://pnpm.io/)
+[![Svelte](https://img.shields.io/badge/svelte-%23f1413d.svg?style=for-the-badge&logo=svelte&logoColor=white)](https://svelte.dev/)
+[![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
+
+</div>
 
 ## 👋 Introduction
 
-Project created using [pnpm](https://pnpm.io/) and [SvelteKit](https://kit.svelte.dev/)
+Project created using [pnpm](https://pnpm.io/), [SvelteKit](https://kit.svelte.dev/) and [Tailwind CSS](https://tailwindcss.com/)
 
 ## 💻 Development
 
