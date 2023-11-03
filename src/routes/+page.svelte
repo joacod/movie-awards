@@ -66,8 +66,11 @@
 {:else if searchedName !== '' && results.length === 0}
 	<p>No movies found with the name "{searchedName}"</p>
 {:else}
-	{#each results as movie}
-		<h3>{movie.imdb_id}</h3>
-		<p>{movie.title}</p>
-	{/each}
+	<ul>
+		{#each results as movie}
+			<li>
+				<a href="{movie.imdb_id}/awards?movie={movie.title}">{movie.title}</a>
+			</li>
+		{/each}
+	</ul>
 {/if}
