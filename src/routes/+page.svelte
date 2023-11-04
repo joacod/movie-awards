@@ -39,14 +39,14 @@
 	<title>Movie Awards</title>
 </svelte:head>
 
-<h1 class="text-4xl font-semibold text-center mb-6">Movie Awards</h1>
+<h1 class="text-5xl font-semibold text-center mb-6">Movie Awards</h1>
 
-<form on:submit|preventDefault={handleFormSubmit} class="mb-8 flex items-center justify-center">
+<form on:submit|preventDefault={handleFormSubmit} class="my-10 flex items-center justify-center">
 	<input
 		bind:this={inputElement}
 		bind:value={name}
 		type="search"
-		class="flex h-10 rounded-md border bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 w-1/2 mr-2 border-[#393e46] text-[#222831] focus:border-[#00adb5]"
+		class="flex h-10 rounded-md border bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 w-1/3 mr-2 border-[#393e46] text-[#222831] focus:border-[#00adb5]"
 		placeholder="Enter movie name"
 	/>
 	<button
