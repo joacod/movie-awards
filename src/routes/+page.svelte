@@ -7,12 +7,14 @@
 	let searchedName = '';
 	let results = [];
 	let loading = false;
+	let errorMessage = null;
 
 	onMount(() => {
 		inputElement.focus();
 	});
 
 	async function getMovieIdsByName() {
+		errorMessage = null;
 		loading = true;
 		searchedName = name;
 		const response = await fetch(`/api/movies/${encodeURIComponent(name)}`);
@@ -23,10 +25,19 @@
 	}
 
 	async function handleFormSubmit() {
+		if (name.trim() === '') {
+			errorMessage = 'Please provide a Movie name.';
+			return;
+		}
+
 		await getMovieIdsByName();
 		inputElement.focus();
 	}
 </script>
+
+<svelte:head>
+	<title>Movie Awards</title>
+</svelte:head>
 
 <h1 class="text-4xl font-semibold text-center mb-6">Movie Awards</h1>
 
@@ -61,16 +72,20 @@
 	</button>
 </form>
 
-{#if loading}
-	<p>Loading...</p>
-{:else if searchedName !== '' && results.length === 0}
-	<p>No movies found with the name "{searchedName}"</p>
-{:else}
-	<ul>
-		{#each results as movie}
-			<li>
-				<a href="{movie.imdb_id}/awards?movie={movie.title}">{movie.title}</a>
-			</li>
-		{/each}
-	</ul>
-{/if}
+<div class="flex justify-center items-center">
+	{#if errorMessage}
+		<p class="text-red-500 text-lg font-bold">{errorMessage}</p>
+	{:else if loading}
+		<div class="animate-spin rounded-full h-20 w-20 border-t-2 border-b-2 border-purple-500" />
+	{:else if searchedName !== '' && results.length === 0}
+		<p>No movies found with the name "{searchedName}"</p>
+	{:else}
+		<ul>
+			{#each results as movie}
+				<li>
+					<a href="{movie.imdb_id}/awards?movie={movie.title}">{movie.title}</a>
+				</li>
+			{/each}
+		</ul>
+	{/if}
+</div>
