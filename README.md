@@ -1,8 +1,8 @@
 <div align="center">
 
-# Movie Awards
+# Movie Awards 🎬
 
-<!-- [![Vercel](https://vercelbadge.vercel.app/api/joacod/movie-awards)](https://.vercel.app/) -->
+[![Vercel](https://vercelbadge.vercel.app/api/joacod/movie-awards)](https://movie-awards-lemon.vercel.app/)
 [![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/joacod/movie-awards/blob/main/LICENSE)
 
 [![PNPM](https://img.shields.io/badge/pnpm-%234a4a4a.svg?style=for-the-badge&logo=pnpm&logoColor=f69220)](https://pnpm.io/)
