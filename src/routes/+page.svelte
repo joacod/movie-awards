@@ -1,5 +1,6 @@
 <script>
 	import { onMount } from 'svelte';
+	import Spinner from '$lib/components/Spinner.svelte';
 
 	let inputElement;
 	let data = null;
@@ -76,7 +77,7 @@
 	{#if errorMessage}
 		<p class="text-red-500 text-lg font-bold">{errorMessage}</p>
 	{:else if loading}
-		<div class="animate-spin rounded-full h-20 w-20 border-t-2 border-b-2 border-purple-500" />
+		<Spinner />
 	{:else if searchedName !== '' && results.length === 0}
 		<p>No movies found with the name "{searchedName}"</p>
 	{:else}

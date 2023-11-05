@@ -1,5 +1,6 @@
 <script>
 	import { onMount } from 'svelte';
+	import Spinner from '$lib/components/Spinner.svelte';
 
 	export let data;
 
@@ -49,8 +50,8 @@
 <h2 class="text-2xl font-semibold text-center mb-6">Awards</h2>
 
 {#if loading}
-	<div class="flex justify-center items-center">
-		<div class="animate-spin rounded-full h-20 w-20 border-t-2 border-b-2 border-purple-500" />
+	<div class="flex justify-center">
+		<Spinner />
 	</div>
 {:else if awards && awards.results.length === 0}
 	<p class="text-center">No awards found.</p>
