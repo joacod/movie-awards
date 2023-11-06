@@ -3,7 +3,7 @@
 </script>
 
 <div
-	class="absolute top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-50"
+	class="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-50"
 >
 	<div class="bg-white p-4 text-sm rounded flex flex-col items-center justify-center">
 		<h2 class="mb-5 text-lg font-bold">Credits</h2>
@@ -41,6 +41,18 @@
 					title="Shots.so website"
 				>
 					icons8.com
+				</a>
+			</li>
+			<li>
+				Icons from
+				<a
+					class="underline"
+					href="https://tabler-icons.io/"
+					target="_blank"
+					rel="noopener noreferrer"
+					title="tabler-icons.io website"
+				>
+					tabler-icons.io
 				</a>
 			</li>
 			<li>
