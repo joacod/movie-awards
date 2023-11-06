@@ -83,8 +83,12 @@
 	{:else}
 		<ul>
 			{#each results as movie}
-				<li>
-					<a href="{movie.imdb_id}/awards?movie={movie.title}">{movie.title}</a>
+				<li
+					class="my-3 px-5 py-2 cursor-pointer bg-white text-[#00adb5] rounded hover:bg-[#00adb5] hover:text-white"
+				>
+					<a href="{movie.imdb_id}/awards?movie={movie.title}"
+						>➡️<span class="pl-2">{movie.title}</span></a
+					>
 				</li>
 			{/each}
 		</ul>
