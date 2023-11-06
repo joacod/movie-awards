@@ -40,7 +40,29 @@
 	<title>Movie Awards</title>
 </svelte:head>
 
-<h1 class="text-5xl font-semibold text-center mb-6">Movie Awards</h1>
+<div class="flex justify-center items-center mb-6">
+	<svg
+		width="40"
+		height="40"
+		viewBox="0 0 24 24"
+		stroke-width="1.5"
+		stroke="currentColor"
+		fill="none"
+		stroke-linecap="round"
+		stroke-linejoin="round"
+	>
+		<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+		<path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z" />
+		<path d="M8 4l0 16" />
+		<path d="M16 4l0 16" />
+		<path d="M4 8l4 0" />
+		<path d="M4 16l4 0" />
+		<path d="M4 12l16 0" />
+		<path d="M16 8l4 0" />
+		<path d="M16 16l4 0" />
+	</svg>
+	<h1 class="text-5xl font-semibold text-center ml-2">Movie Awards</h1>
+</div>
 
 <form on:submit|preventDefault={handleFormSubmit} class="my-10 flex items-center justify-center">
 	<input
@@ -83,8 +105,12 @@
 	{:else}
 		<ul>
 			{#each results as movie}
-				<li>
-					<a href="{movie.imdb_id}/awards?movie={movie.title}">{movie.title}</a>
+				<li
+					class="my-3 px-5 py-2 cursor-pointer bg-white text-[#00adb5] rounded hover:bg-[#00adb5] hover:text-white"
+				>
+					<a href="{movie.imdb_id}/awards?movie={movie.title}"
+						>➡️<span class="pl-2">{movie.title}</span></a
+					>
 				</li>
 			{/each}
 		</ul>

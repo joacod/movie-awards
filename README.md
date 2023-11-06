@@ -26,7 +26,7 @@ pnpm install
 **Run the development server:**
 
 ```bash
-pnpm run dev
+pnpm dev
 ```
 
 Open [http://localhost:5173](http://localhost:5173) with your browser to see the web.
